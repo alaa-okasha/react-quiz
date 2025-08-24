@@ -19,7 +19,7 @@ A dynamic and interactive quiz application built with React.js using modern hook
 
 ## 🚀 Demo
 
-[Live Demo](https://alaa-okasha.github.io/react-quiz)
+[Live Demo](https://react-quiz-gamma-murex.vercel.app/)
 
 ## 📸 Screenshots
 
