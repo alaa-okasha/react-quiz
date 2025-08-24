@@ -18,13 +18,13 @@ A dynamic and interactive quiz application built with React.js using modern hook
 
 ## 🚀 Demo
 
-[Live Demo](https://alaa-okasha.github.io/react-quiz) _(Update with your actual demo link)_
+[Live Demo](https://alaa-okasha.github.io/react-quiz)
 
 ## 📸 Screenshots
 
-![Quiz Interface](./rq01.png)
-![Question Interface](./rq02.png)
-![Results Page](./rq03.png)
+![Quiz Interface](./public/rq01.png)
+![Question Interface](./public/rq02.png)
+![Results Page](./public/rq03.png)
 
 ## 🛠️ Technologies Used
 
