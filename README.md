@@ -15,6 +15,7 @@ A dynamic and interactive quiz application built with React.js using modern hook
 - **Restart Capability**: Easy restart functionality to retake the quiz
 - **Error Handling**: Graceful error handling for network requests
 - **Loading States**: Smooth loading experience while fetching data
+- **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
 
 ## 🚀 Demo
 
