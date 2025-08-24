@@ -61,7 +61,9 @@ function App() {
   useEffect(function () {
     fetch("/questions.json")
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
+      .then((data) =>
+        dispatch({ type: "dataReceived", payload: data.questions })
+      )
       .catch(() => dispatch({ type: "dataFailed" }));
   }, []);
   return (
