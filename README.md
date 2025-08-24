@@ -1,11 +1,11 @@
 # React Quiz 🧠
 
-A dynamic and interactive quiz application built with React.js using modern hooks (useReducer, useEffect) that fetches questions from a local JSON server and provides an engaging quiz-taking experience with real-time feedback.
+A dynamic and interactive quiz application built with React.js using modern hooks (useReducer, useEffect) that fetches questions and provides an engaging quiz-taking experience with real-time feedback.
 
 ## 🌟 Features
 
 - **State Management with useReducer**: Robust state management using React's useReducer hook for complex state logic
-- **Dynamic Question Loading**: Fetches questions from a local JSON server (localhost:8000)
+- **Dynamic Question Loading**: Fetches questions from a questions.json file located in the public/ folder, making it easy to update questions without changing the source code.
 - **Interactive Quiz Flow**: Start screen → Active quiz → Results screen with smooth transitions
 - **Real-time Score Tracking**: Instant point calculation based on correct answers
 - **Progress Indicator**: Visual progress bar showing current question and accumulated points
@@ -33,7 +33,6 @@ A dynamic and interactive quiz application built with React.js using modern hook
 - **Vite** - Fast build tool and development server
 - **JavaScript (ES6+)** - Modern JavaScript features with JSX
 - **CSS3** - Component-based styling
-- **JSON Server** - Mock REST API for question data (development)
 - **Fetch API** - For HTTP requests to load questions
 - **ESLint** - Code linting and formatting
 
@@ -57,23 +56,13 @@ A dynamic and interactive quiz application built with React.js using modern hook
    npm install
    ```
 
-4. **Set up the JSON Server (for questions data)**
-
-   ```bash
-   # Install json-server globally if you haven't already
-   npm install -g json-server
-
-   # Start the JSON server using your questions.json file
-   json-server --watch data/questions.json --port 8000
-   ```
-
-5. **Start the development server** (in a new terminal)
+4. **Start the development server** (in a new terminal)
 
    ```bash
    npm run dev
    ```
 
-6. **Open your browser and visit**
+5. **Open your browser and visit**
    ```
    http://localhost:5173
    ```
