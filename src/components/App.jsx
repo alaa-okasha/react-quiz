@@ -40,6 +40,8 @@ function reducer(state, action) {
       return { ...state, index: state.index + 1, answer: null };
     case "finish":
       return { ...state, status: "finished" };
+    case "restart":
+      return { ...state, status: "ready", index: 0, answer: null, points: 0 };
     default:
       throw new Error("Unknown Action");
   }
@@ -60,7 +62,7 @@ function App() {
     fetch("http://localhost:8000/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
+      .catch(() => dispatch({ type: "dataFailed" }));
   }, []);
   return (
     <div className="app">
@@ -94,7 +96,11 @@ function App() {
           </>
         )}
         {status === "finished" && (
-          <FinishScreen points={points} maxPossiblePoints={maxPossiblePoints} />
+          <FinishScreen
+            points={points}
+            maxPossiblePoints={maxPossiblePoints}
+            dispatch={dispatch}
+          />
         )}
       </MainSection>
     </div>
